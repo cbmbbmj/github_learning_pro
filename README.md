@@ -244,8 +244,105 @@ To test your key :-
        git init 
     2] go to github and create repo .
     3] choose ssh from page which appears after creating Repo 
-    and then :- 
+    and then :- write the following commands :- 
       1] git branch -M main
       2] git remote add origin git@github.com:cbmbbmj/nene.git
       3] git push -u origin main
+``` 
+
+***
+
+* ### To add nickname for certain command ⬇️
+
+```shell
+    git config --global alias.nickname  command 
+
+    EX:- 
+      git config --global alias.br branch
+        so we can get the branch by the following two commands :- 
+          git br 
+          git branch
+    Another EX:- 
+      git config --global alias.cm "commit -m"
+        so we can get the branch by the following two commands :- 
+          git cm "descrition"
+          git commit -m "description" 
+
+   if open .gitconfig :- from the command ==>  git config --global --edit :- 
+    .gitconfig
+      [user]
+        email = email@gmail.com
+        name = your name 
+      [color "status"]
+        added =blue
+        changed = red bold
+        untracked = green
+      [color "branch"]
+        remote = magenta
+      [alias]
+        br = branch
+        cm = commit  -m
+        st = status
+
+``` 
+
+* ### How to define and use aliases ⬇️
+
+```urls
+1] https://opensource.com/article/20/11/git-aliases
+2] https://snyk.io/blog/10-git-aliases-for-faster-and-productive-git-workflow/
 ```
+
+***
+
+* ### To create a new branch ⬇️
+
+```shell
+  git branch branch_name
+```
+
+* ###  To switch to branch (move to another branch) ⬇️ 
+
+```shell
+   git checkout branch_name
+```   
+
+* ### To Delete the specified branch. ⬇️
+
+```shell
+  git branch -d branch_name
+```
+
+* ### To force delete the specified branch ⬇️ 
+
+```shell
+  git branch -D branch_name 
+```
+
+* ### to create branch and switch ⬇️ 
+
+```shell
+  git checkout -b branch_name
+```  
+
+* ### To rename the current branch ⬇️ 
+
+```shell
+  git branch -m branch_name 
+```  
+
+* ### To merge the current branch  to main branch ⬇️  
+
+```shell
+    go to main ==>           git checkout main 
+    merge branch to main =>  git merge branch_name
+```  
+
+* ### To load  the current branch  to main branch ⬇️
+
+```shell
+git push origin name_branch   
+   ==> make a pull request
+``` 
+   
+***
