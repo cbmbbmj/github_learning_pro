@@ -1,11 +1,11 @@
-# All git commands of github ordered 🔥
+# All git commands of github ordered 🔥 
 
 ## 👍 conclusion for git commands 👍
 
 * ### For downloading project from github 🔽
 
 ``` Shell
-git clone "url to github project"
+git clone "url to github project" 
 ```
 
 * ### To see your state after editing on files ⬇️
@@ -247,7 +247,9 @@ To test your key :-
     and then :- write the following commands :- 
       1] git branch -M main
       2] git remote add origin git@github.com:cbmbbmj/nene.git
-      3] git push -u origin main
+      3] git add *
+      4] git commit -m "description"
+      5] git push -u origin main
 ``` 
 
 ***
